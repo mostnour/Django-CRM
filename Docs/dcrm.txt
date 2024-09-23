@@ -1,0 +1,62 @@
+/* Defined by : Eng. Mostafa Abuelnour Gaber */
+/* Created Date : 2024-09-19 02:22 pm */
+/* Last Update	: 2024-09-19 02:22 pm */
+
+|| C:\ProgramData\IntelVS\GSHR\Analysis\Form_Design\FM32GB Work Status.txt
+|| C:\ProgramData\IntelVS\GSHR\Analysis\Form_Design\Reports\Report Manager.txt
+
+|| C:\ProgramData\IntelVS\HassounaAcademy\PythonDjango\projects\dcrm\Docs\dcrm.txt
+
+$ cd C:\ProgramData\IntelVS\HassounaAcademy\Django – Code a CRM App\Projects
+$ mkdir dcrm
+
+$ cd dcrm
+
+$ code .
+vscode> Change Termainal type to Command Prompt
+
+==> # python -m venv .\venv
+==> # .\venv\Scripts\activate
+
+$ pip install django
+
+Create your Project
+$ django-admin startproject dcrm
+
+
+
+I need to make a project TruckBarCode as a back-end for mobile application TruckBarCode
+|| C:\ProgramData\IntelVS\HassounaAcademy\PythonDjango\projects\dcrm\Docs\EFGTrkBrCod_LtSAP.txt
+
+Create a superuser
+$ python manage.py createsuperuser
+	Username (leave blank to use 'mostafa.gaber'): mostnour
+	Email address: eng_mostafa.gaber@yahoo.com
+	Password: Ngs#1
+	Password (again): Ngs#1
+
+
+To Start your project:
+$ python manage.py runserver
+
+To Start your project with another port:
+$ python manage.py runserver 8886
+
+Version Control
+|ref| C:\EGYPTFOODS\PHP\Laravel\Laravel and github.txt
+|ref| C:\EGYPTFOODS\PHP\Laravel\github.txt
+
+https://codemy.com/git
+$ git config --global user.name "mostnour"
+$ git config --global user.email "mostnour@yahoo.com"
+$ git config --global push.default matching
+$ git config --global alias.co checkout
+$ git init
+
+ 
+ 
+** Be sure to change the “Your Name” and “you@youraddress.com” in the first two commands to your actual name and your actual email address. I suggest you use the same email address that you plan to use at github.com later.
+
+$ git add .
+$ git commit -am 'Initial Commit'
+

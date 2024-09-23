@@ -1,0 +1,16 @@
+/* Defined by : Eng. Mostafa Abuelnour Gaber */
+/* Created Date : 2024-09-19 02:30 pm */
+/* Last Update	: 2024-09-19 02:30 pm */
+
+Create your first application [website]
+vscode> python manage.py startapp website
+
+Add your App. [Link to SAP] to your Project
+C:\ProgramData\IntelVS\HassounaAcademy\PythonDjango\projects\efgtruckbarcode\efgtruckbarcode\settings.py
+INSTALLED_APPS = [
+    'website.apps.WebsiteConfig',
+
+Manage URLs by adding new file:
+C:\ProgramData\IntelVS\HassounaAcademy\PythonDjango\projects\efgtruckbarcode\website\urls.py
+
+|ref| C:\ProgramData\IntelVS\HassounaAcademy\PythonDjango\projects\mycoffee\Docs\mycoffee_App_Pages.txt
