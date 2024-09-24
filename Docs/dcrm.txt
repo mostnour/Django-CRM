@@ -60,3 +60,23 @@ $ git init
 $ git add .
 $ git commit -am 'Initial Commit'
 
+|| Connect to your github.com -> user name -> Password
+|| from Right icon select from menu {Your Repositories}
+|| for the first use only -> click New button and type name Django CRM
+	Public
+
+	Create repository
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:mostnour/Django-CRM.git
+
+$ git remote add origin git@github.com:mostnour/Django-CRM.git	// This is used to link your project files to github
+						// added the following lines to file D:\wamp64\www\starter\.git\config
+						
+						[remote "origin"]
+							url = git@github.com:mostnour/Django-CRM.git
+							fetch = +refs/heads/*:refs/remotes/origin/*
+
+git branch -M main
+git push -u origin main
+
