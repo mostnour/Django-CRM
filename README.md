@@ -2,7 +2,8 @@
 django CMS
 ********
 ![Screenshot_2](https://img.shields.io/pypi/v/django-cms.svg)
-    ![Alt text](https://pypi.python.org/pypi/django-cms/)
+    https://pypi.python.org/pypi/django-cms/
+    
 ![Screenshot_2](https://img.shields.io/badge/wheel-yes-green.svg)
     :target: https://pypi.python.org/pypi/django-cms/
 ![Screenshot_2](https://img.shields.io/pypi/l/django-cms.svg)
