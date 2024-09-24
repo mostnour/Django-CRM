@@ -67,16 +67,95 @@ $ git commit -am 'Initial Commit'
 
 	Create repository
 
-…or push an existing repository from the command line
-git remote add origin git@github.com:mostnour/Django-CRM.git
 
-$ git remote add origin git@github.com:mostnour/Django-CRM.git	// This is used to link your project files to github
-						// added the following lines to file D:\wamp64\www\starter\.git\config
-						
-						[remote "origin"]
-							url = git@github.com:mostnour/Django-CRM.git
-							fetch = +refs/heads/*:refs/remotes/origin/*
+$ C:\Program Files\Git\bin>ssh-agent -s
 
-git branch -M main
-git push -u origin main
+	unable to start ssh-agent service, error :1058
+	https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro
 
+	You can check this by running in Windows PowerShell:
+
+	Windows PowerShell
+	Copyright (C) Microsoft Corporation. All rights reserved.
+
+	Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+	PS C:\Users\mostafa.gaber> Get-Service ssh-agent
+
+	Status   Name               DisplayName
+	------   ----               -----------
+	Stopped  ssh-agent          OpenSSH Authentication Agent
+
+
+	$ Start Windows -> Run -> services.msc :
+		- Search for "OpenSSH Authentication Agent"
+		- Change Start Type to Automatically
+		- Then Click on Button Start
+
+$ ssh-keygen -t ed25519 -C "mostnour@yahoo.com"
+$ cd  C:/Users/mostafa.gaber/.ssh/
+$ ssh-add id_ed25519
+
+$ cd C:\ProgramData\IntelVS\HassounaAcademy\Django – Code a CRM App\Projects\dcrm\.git
+# Open git bash
+$ cat config
+	mostafa.gaber@MOSTAFA-GABER MINGW64 /c/ProgramData/IntelVS/HassounaAcademy/Django – Code a CRM App/Projects/dcrm/.git (GIT_DIR!)
+	$ cat config
+	[core]
+			repositoryformatversion = 0
+			filemode = false
+			bare = false
+			logallrefupdates = true
+			ignorecase = true
+	[remote "origin"]
+			url = git@github.com:mostnour/Django-CRM.git
+			fetch = +refs/heads/*:refs/remotes/origin/*
+
+	mostafa.gaber@MOSTAFA-GABER MINGW64 /c/ProgramData/IntelVS/HassounaAcademy/Django – Code a CRM App/Projects/dcrm/.git (GIT_DIR!)
+	$
+
+
+$ ssh-add -T pubkey id_ed25519
+$ git push -u origin main
+
+
+
+ssh-agent -s
+ssh-add C:/Users/mostafa.gaber/.ssh/id_rsa
+			
+cd  C:/Users/mostafa.gaber/.ssh/
+ssh-add id_rsa
+			
+ssh-add id_ed25519
+
+Check that you are connecting to the correct server
+ssh -vT git@github.com
+Always use the "git" user
+$ ssh -T mostnour@github.com
+
+	mostnour@github.com: Permission denied (publickey).
+	* Adding a remote repository
+
+	$ git remote add origin https://github.com/mostnour/Django-CRM.git
+	# Set a new remote
+
+	$ git remote -v
+	# Verify new remote
+
+git> eval "$(ssh-agent -s)"
+git> ssh-add -l -E sha256
+	The agent has no identities.
+	1- $ ssh-keygen -t ed25519 -C "mostnour@yahoo.com"
+
+	2- Browse https://github.com/settings/keys
+	3- Open file C:\Users\mostafa.gaber\.ssh\id_ed25519.pub
+	4- Copy file content in step No.3 .
+	5- In step No.2 click on button "New SSH key".
+	6- Add title to the "New SSH key".
+	7- Paste what you copy in step No. 4 .
+	8- Click on button "Add SSH key". 
+
+$ git push -u origin main
+Refresh your page https://github.com/mostnour/Django-CRM
+
+All Done :)
