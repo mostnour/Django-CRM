@@ -88,7 +88,7 @@ Test django CMS in our demo
 
 The demo platform is kindly provided by Divio, platinum member of the django CMS Association.
 
-.. image:: https://raw.githubusercontent.com/django-cms/django-cms/develop/docs/images/try-with-divio.png
+![Screenshot_2](https://raw.githubusercontent.com/django-cms/django-cms/develop/docs/images/try-with-divio.png)
    :target: https://www.django-cms.org/en/django-cms-demo/
    :alt: Try demo with Divio Cloud
 
