@@ -3,11 +3,11 @@ django CMS
 ********
 ![Screenshot_2](https://img.shields.io/pypi/v/django-cms.svg)
     :target: https://pypi.python.org/pypi/django-cms/
-.. image:: https://img.shields.io/badge/wheel-yes-green.svg
+![Screenshot_2](https://img.shields.io/badge/wheel-yes-green.svg)
     :target: https://pypi.python.org/pypi/django-cms/
-.. image:: https://img.shields.io/pypi/l/django-cms.svg
+![Screenshot_2](https://img.shields.io/pypi/l/django-cms.svg)
     :target: https://pypi.python.org/pypi/django-cms/
-.. image:: https://codeclimate.com/github/divio/django-cms/badges/gpa.svg
+![Screenshot_2](https://codeclimate.com/github/divio/django-cms/badges/gpa.svg)
    :target: https://codeclimate.com/github/divio/django-cms
    :alt: Code Climate
 
